@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a71930">
+  <meta name="description" content="Consulta dos rádios SIRESP — CBSLeiria">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="logo-fix.css">
+  <link rel="stylesheet" href="features.css">
+  <link rel="stylesheet" href="consulta.css">
+  <title>Consulta Rádios SIRESP | CBSLeiria</title>
+</head>
+<body class="consultation-page">
+  <header class="site-header consultation-header">
+    <img class="logo" src="logo.png" alt="Logótipo dos Bombeiros Sapadores de Leiria">
+    <div><p class="eyebrow">CBSLEIRIA</p><h1>Consulta Rádios Comunicações SIRESP</h1><p class="subtitle">Acesso reservado · apenas consulta</p></div>
+    <div id="consultation-session-actions" class="header-actions hidden"><button id="consultation-sign-out" class="secondary">Terminar sessão</button></div>
+  </header>
+
+  <main>
+    <div id="consultation-message" class="message" role="status" aria-live="polite"></div>
+
+    <section id="consultation-login" class="consultation-login panel active">
+      <div class="login-emblem" aria-hidden="true">🔒</div>
+      <h2>Acesso à consulta SIRESP</h2>
+      <p>Introduza o código de acesso fornecido pela CBSLeiria.</p>
+      <form id="consultation-login-form">
+        <label>Código de acesso *<input id="consultation-password" type="password" autocomplete="off" required autofocus></label>
+        <button type="submit" class="primary" disabled>Entrar</button>
+      </form>
+      <p id="consultation-login-error" class="login-error" role="alert"></p>
+      <small>A sessão permanece durante esta utilização e termina quando fechar o navegador ou escolher “Terminar sessão”.</small>
+    </section>
+
+    <section id="consultation-content" class="panel hidden">
+      <div class="section-heading consultation-title-row">
+        <div><h2>Listagem de equipamentos SIRESP</h2><p id="consultation-updated">A carregar dados…</p></div>
+        <span class="readonly-badge">Apenas consulta</span>
+      </div>
+
+      <div id="consultation-cards" class="dashboard-cards"></div>
+
+      <div class="consultation-filters" aria-label="Filtros da consulta">
+        <label>Pesquisar<input id="consultation-search" type="search" placeholder="Rádio Nº, ISSI, S/N, marca, modelo…"></label>
+        <label>Tipo<select id="consultation-type"><option value="">Todos</option></select></label>
+        <label>Estado<select id="consultation-status"><option value="">Todos</option></select></label>
+        <label>Localização<select id="consultation-location"><option value="">Todas</option></select></label>
+        <label>Alocado<select id="consultation-allocated"><option value="">Todos</option></select></label>
+        <label>Marca<select id="consultation-brand"><option value="">Todas</option></select></label>
+        <label>Modelo<select id="consultation-model"><option value="">Todos</option></select></label>
+        <button id="consultation-clear" class="secondary">Limpar filtros</button>
+      </div>
+
+      <p id="consultation-result-summary" class="consultation-result-summary"></p>
+      <div class="table-wrap"><table class="consultation-table"><thead><tr><th data-consultation-sort="portableNumber">Rádio Nº</th><th data-consultation-sort="type">Tipo</th><th data-consultation-sort="issi">ISSI</th><th data-consultation-sort="serialNumber">S/N</th><th data-consultation-sort="brand">Marca</th><th data-consultation-sort="model">Modelo</th><th data-consultation-sort="allocatedTo">Alocado</th><th data-consultation-sort="status">Estado</th><th data-consultation-sort="location">Localização</th></tr></thead><tbody id="consultation-records"></tbody></table></div>
+    </section>
+  </main>
+
+  <noscript><p class="noscript-warning">Esta página necessita de JavaScript para apresentar a consulta.</p></noscript>
+  <script type="module" src="consulta.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+.consultation-page main {
+  max-width: 1380px;
+}
+
+.consultation-header .header-actions {
+  align-self: center;
+}
+
+.consultation-login {
+  width: min(430px, 100%);
+  margin: 40px auto;
+  text-align: center;
+}
+
+.consultation-login h2 {
+  margin: 8px 0;
+}
+
+.consultation-login > p {
+  color: var(--muted);
+}
+
+.consultation-login form {
+  display: grid;
+  gap: 14px;
+  margin: 22px 0 12px;
+  text-align: left;
+}
+
+.consultation-login form button {
+  width: 100%;
+}
+
+.login-emblem {
+  font-size: 2.4rem;
+}
+
+.login-error {
+  min-height: 1.3em;
+  margin: 8px 0;
+  color: #9a211c;
+  font-weight: 700;
+}
+
+.readonly-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: .45rem .7rem;
+  border-radius: 99px;
+  background: #e1ecf9;
+  color: #20588b;
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+.consultation-filters {
+  display: grid;
+  grid-template-columns: 2fr repeat(6, minmax(115px, 1fr)) auto;
+  gap: 10px;
+  align-items: end;
+  padding: 15px;
+  margin-bottom: 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #f6f7f8;
+}
+
+.consultation-filters label {
+  min-width: 0;
+  font-size: .82rem;
+}
+
+.consultation-filters input,
+.consultation-filters select {
+  min-width: 0;
+  padding: .48rem;
+  font-size: .9rem;
+}
+
+.consultation-filters button {
+  height: 38px;
+  white-space: nowrap;
+}
+
+.consultation-result-summary {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.consultation-table {
+  min-width: 1080px;
+}
+
+.consultation-table th[data-consultation-sort] {
+  cursor: pointer;
+}
+
+.consultation-table th[data-consultation-sort]::after {
+  content: ' ↕';
+  opacity: .55;
+}
+
+.consultation-table th.sort-asc::after {
+  content: ' ↑';
+  opacity: 1;
+}
+
+.consultation-table th.sort-desc::after {
+  content: ' ↓';
+  opacity: 1;
+}
+
+.noscript-warning {
+  padding: 20px;
+  color: #9a211c;
+  text-align: center;
+  font-weight: 800;
+}
+
+@media (max-width: 1100px) {
+  .consultation-filters {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .consultation-filters label:first-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .consultation-filters {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .consultation-filters label:first-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 460px) {
+  .consultation-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .consultation-filters label:first-child {
+    grid-column: auto;
+  }
+}
