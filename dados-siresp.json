@@ -1,19 +1,7 @@
 {
   "application": "CBSLeiria Consulta SIRESP",
   "schemaVersion": 1,
-  "exportedAt": "2026-08-07T08:29:06.216Z",
-  "recordCount": 1,
-  "records": [
-    {
-      "portableNumber": "0001",
-      "type": "Portátil",
-      "issi": "34567890",
-      "serialNumber": "98765432",
-      "brand": "Sepura",
-      "model": "FCR",
-      "allocatedTo": "CBSL",
-      "status": "Operacional",
-      "location": "CMOS"
-    }
-  ]
+  "exportedAt": "2026-08-07T08:32:22.311Z",
+  "recordCount": 0,
+  "records": []
 }
