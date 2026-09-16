@@ -3,8 +3,9 @@ const DATA_URL = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? 'dados-s
 const ACCESS_CODE_HASH = '4f52cc46f313cfe03dc5d9a4c5dc826978d420dc9331420711c3fde8efaba183';
 const SESSION_KEY = 'cbsleiria.consulta.siresp.session';
 const CACHE_KEY = 'cbsleiria.consulta.siresp.lastPublication';
-const FIELD_KEYS = ['portableNumber','type','issi','serialNumber','brand','model','allocatedTo','status','location'];
+const FIELD_KEYS = ['portableNumber','type','issi','serialNumber','brand','model','allocatedTo','network','status','location'];
 const FILTERS = {
+  network: 'consultation-network',
   type: 'consultation-type',
   status: 'consultation-status',
   location: 'consultation-location',
@@ -65,6 +66,7 @@ function updateSelect(id, values, emptyLabel) {
 }
 
 function renderFilterOptions() {
+  updateSelect('consultation-network', ['Municipal','ANEPC','Dupla'], 'Todas');
   updateSelect('consultation-type', uniqueValues('type'), 'Todos');
   updateSelect('consultation-status', uniqueValues('status'), 'Todos');
   updateSelect('consultation-location', uniqueValues('location'), 'Todas');
@@ -101,9 +103,10 @@ function renderTable() {
       <td>${escapeHtml(record.brand)}</td>
       <td>${escapeHtml(record.model)}</td>
       <td>${escapeHtml(record.allocatedTo)}</td>
+      <td>${escapeHtml(record.network)}</td>
       <td><span class="status ${statusClass(record.status)}">${escapeHtml(record.status)}</span></td>
       <td>${escapeHtml(record.location)}</td>
-    </tr>`).join('') : '<tr><td colspan="9" class="empty">Nenhum equipamento corresponde aos filtros.</td></tr>';
+    </tr>`).join('') : '<tr><td colspan="10" class="empty">Nenhum equipamento corresponde aos filtros.</td></tr>';
 
   document.querySelectorAll('[data-consultation-sort]').forEach(header => {
     header.classList.toggle('sort-asc', header.dataset.consultationSort === sort.key && sort.direction === 1);

@@ -1,4 +1,4 @@
-const CACHE = 'radios-consulta-v2';
+const CACHE = 'radios-consulta-v3';
 const ASSETS = [
   './',
   './index.html',
