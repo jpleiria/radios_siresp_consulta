@@ -151,3 +151,16 @@
 /* Na listagem, apenas a localização pode ocupar várias linhas. */
 #consultation-records td{white-space:nowrap}
 #consultation-records td:nth-child(10){white-space:normal;overflow-wrap:anywhere;min-width:160px;max-width:320px}
+/* Logótipos locais, mantendo nomes e ícones na mesma linha. */
+.list-with-logo{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.list-logo{display:block;width:58px;height:24px;object-fit:contain;flex-shrink:0}
+.list-logo-motorola{width:66px}
+.list-logo-municipal{width:46px;height:28px}
+.list-logo-anepc{width:62px}
+
+/* Versões compactas dos logótipos, sem designações duplicadas. */
+.list-logo-motorola{width:110px;height:24px}
+.list-logo-sepura{width:80px;height:24px}
+.list-logo-anepc{width:30px;height:30px}
+.municipal-emblem{display:inline-block;position:relative;width:32px;height:34px;overflow:hidden;flex-shrink:0}
+.municipal-emblem .list-logo{position:static;height:34px;width:32px;max-width:100%;object-fit:contain}
