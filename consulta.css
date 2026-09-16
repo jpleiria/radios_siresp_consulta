@@ -146,3 +146,8 @@
     grid-column: auto;
   }
 }
+
+
+/* Na listagem, apenas a localização pode ocupar várias linhas. */
+#consultation-records td{white-space:nowrap}
+#consultation-records td:nth-child(10){white-space:normal;overflow-wrap:anywhere;min-width:160px;max-width:320px}
