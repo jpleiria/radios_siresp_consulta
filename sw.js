@@ -1,4 +1,4 @@
-const CACHE = 'radios-consulta-v10';
+const CACHE = 'radios-consulta-v11';
 const ASSETS = [
   './motorola.webp','./sepura.webp','./anepc.webp','./leiria-brasao.webp',
   './',

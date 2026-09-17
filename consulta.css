@@ -164,3 +164,9 @@
 .list-logo-anepc{width:30px;height:30px}
 .municipal-emblem{display:inline-block;position:relative;width:32px;height:34px;overflow:hidden;flex-shrink:0}
 .municipal-emblem .list-logo{position:static;height:34px;width:32px;max-width:100%;object-fit:contain}
+
+/* Dimensões compactas dos logótipos na listagem. */
+.list-logo-motorola{width:90px;height:20px}
+.list-logo-sepura{width:64px;height:20px}
+.list-logo-anepc{width:24px;height:24px}
+.list-logo-municipal{width:24px;height:26px}

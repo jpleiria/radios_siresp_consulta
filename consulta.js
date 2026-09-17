@@ -26,6 +26,12 @@ function escapeHtml(value = '') {
   return String(value).replace(/[&<>'"]/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]));
 }
 
+function listLogoHtml(name){
+  const logos={motorola:['motorola.webp','Motorola',90,20],sepura:['sepura.webp','Sepura',64,20],anepc:['anepc.webp','ANEPC',24,24],municipal:['leiria-brasao.webp','Município de Leiria',24,26]};
+  const logo=logos[name];return logo?`<img class="list-logo list-logo-${name}" src="${logo[0]}" alt="${logo[1]}" title="${logo[1]}" width="${logo[2]}" height="${logo[3]}" style="width:${logo[2]}px;height:${logo[3]}px;object-fit:contain;vertical-align:middle;flex-shrink:0">`:'';
+}
+function brandCellHtml(value){const key=normalized(value),icon=key==='motorola'?'motorola':key==='sepura'?'sepura':'';return icon?`<span class="list-with-logo">${listLogoHtml(icon)}</span>`:escapeHtml(value)}
+function networkCellHtml(value){const key=normalized(value),icons=key==='dupla'?['municipal','anepc']:[key];return `<span class="list-with-logo">${icons.map(listLogoHtml).join('')}<span>${escapeHtml(value)}</span></span>`}
 function statusClass(value) {
   return String(value || '').replace(/[^A-Za-zÀ-ÿ]/g, '');
 }
@@ -75,12 +81,17 @@ function renderFilterOptions() {
   updateSelect('consultation-model', uniqueValues('model'), 'Todos');
 }
 
+function compareRecords(a,b){
+  const av=String(a[sort.key]??'').trim(),bv=String(b[sort.key]??'').trim();
+  if(sort.key==='portableNumber'&&(!av||!bv)){if(!av&&bv)return 1;if(av&&!bv)return -1;return String(a.type??'').localeCompare(String(b.type??''),'pt',{numeric:true,sensitivity:'base'})}
+  return av.localeCompare(bv,'pt',{numeric:true,sensitivity:'base'})*sort.direction;
+}
 function filteredRecords() {
   const query = normalized($('consultation-search').value);
   return records.filter(record => {
     if (query && !normalized(FIELD_KEYS.map(key => record[key]).join(' ')).includes(query)) return false;
     return Object.entries(FILTERS).every(([field, id]) => !$(id).value || record[field] === $(id).value);
-  }).sort((a, b) => String(a[sort.key] || '').localeCompare(String(b[sort.key] || ''), 'pt', { sensitivity: 'base', numeric: true }) * sort.direction);
+  }).sort(compareRecords);
 }
 
 function renderCards() {
@@ -100,10 +111,10 @@ function renderTable() {
       <td>${escapeHtml(record.type)}</td>
       <td>${escapeHtml(record.issi)}</td>
       <td>${escapeHtml(record.serialNumber)}</td>
-      <td>${escapeHtml(record.brand)}</td>
+      <td>${brandCellHtml(record.brand)}</td>
       <td>${escapeHtml(record.model)}</td>
       <td>${escapeHtml(record.allocatedTo)}</td>
-      <td>${escapeHtml(record.network)}</td>
+      <td>${networkCellHtml(record.network)}</td>
       <td><span class="status ${statusClass(record.status)}">${escapeHtml(record.status)}</span></td>
       <td>${escapeHtml(record.location)}</td>
     </tr>`).join('') : '<tr><td colspan="10" class="empty">Nenhum equipamento corresponde aos filtros.</td></tr>';
