@@ -1,5 +1,5 @@
-const RAW_DATA_URL = 'https://raw.githubusercontent.com/jpleiria/radios_siresp_consulta/main/dados-siresp.json';
-const DATA_URL = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? 'dados-siresp.json' : RAW_DATA_URL;
+const GITHUB_DATA_URL = 'https://api.github.com/repos/jpleiria/radios_siresp_consulta/contents/dados-siresp.json?ref=main';
+const DATA_URL = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? 'dados-siresp.json' : GITHUB_DATA_URL;
 const ACCESS_CODE_HASH = '4f52cc46f313cfe03dc5d9a4c5dc826978d420dc9331420711c3fde8efaba183';
 const SESSION_KEY = 'cbsleiria.consulta.siresp.session';
 const CACHE_KEY = 'cbsleiria.consulta.siresp.lastPublication';
@@ -24,6 +24,11 @@ function normalized(value) {
 
 function escapeHtml(value = '') {
   return String(value).replace(/[&<>'"]/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]));
+}
+
+function decodeBase64Utf8(value) {
+  const bytes = Uint8Array.from(atob(String(value || '').replace(/\s/g, '')), character => character.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
 }
 
 function listLogoHtml(name){
@@ -152,7 +157,10 @@ async function loadPublication() {
     const separator = DATA_URL.includes('?') ? '&' : '?';
     const response = await fetch(`${DATA_URL}${separator}v=${Date.now()}`, { cache: 'no-store' });
     if (!response.ok) throw new Error(`http-${response.status}`);
-    const publication = validatePublication(await response.json());
+    const source = await response.json();
+    const publication = validatePublication(
+      DATA_URL === GITHUB_DATA_URL ? JSON.parse(decodeBase64Utf8(source.content)) : source
+    );
     localStorage.setItem(CACHE_KEY, JSON.stringify(publication));
     displayPublication(publication);
     setMessage('');
