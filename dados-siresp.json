@@ -1,8 +1,8 @@
 {
   "application": "CBSLeiria Consulta SIRESP",
   "schemaVersion": 1,
-  "exportedAt": "2026-09-18T22:31:58.928Z",
-  "recordCount": 63,
+  "exportedAt": "2026-09-25T15:51:56.306Z",
+  "recordCount": 67,
   "records": [
     {
       "portableNumber": "",
@@ -127,7 +127,7 @@
     {
       "portableNumber": "",
       "type": "Móvel",
-      "issi": "6124391",
+      "issi": "6124394",
       "serialNumber": "****",
       "brand": "MOTOROLA",
       "model": "MTM5400",
@@ -163,13 +163,13 @@
     {
       "portableNumber": "",
       "type": "Móvel",
-      "issi": "6124394",
+      "issi": "6124394*",
       "serialNumber": "***",
       "brand": "MOTOROLA",
       "model": "MTM5400",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Reserva",
+      "status": "Abatido",
       "location": "VTTR01 - ABATIDO"
     },
     {
@@ -753,6 +753,54 @@
       "type": "Portátil",
       "issi": "6124419",
       "serialNumber": "121TAM1339",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "CBSL",
+      "network": "Dupla",
+      "status": "Reserva",
+      "location": "Gab. Central"
+    },
+    {
+      "portableNumber": "0034",
+      "type": "Portátil",
+      "issi": "6124415",
+      "serialNumber": "121TAM3491",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "CBSL",
+      "network": "Dupla",
+      "status": "Reserva",
+      "location": "Gab. Central"
+    },
+    {
+      "portableNumber": "0035",
+      "type": "Portátil",
+      "issi": "6124416",
+      "serialNumber": "121TAK2403",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "CBSL",
+      "network": "Dupla",
+      "status": "Reserva",
+      "location": "Gab. Central"
+    },
+    {
+      "portableNumber": "0036",
+      "type": "Portátil",
+      "issi": "6124417",
+      "serialNumber": "121TAK2402",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "CBSL",
+      "network": "Dupla",
+      "status": "Reserva",
+      "location": "Gab. Central"
+    },
+    {
+      "portableNumber": "0037",
+      "type": "Portátil",
+      "issi": "6124418",
+      "serialNumber": "121TAK2347",
       "brand": "MOTOROLA",
       "model": "MTP3550",
       "allocatedTo": "CBSL",
