@@ -1,9 +1,213 @@
 {
   "application": "CBSLeiria Consulta SIRESP",
   "schemaVersion": 1,
-  "exportedAt": "2026-09-30T13:25:32.777Z",
-  "recordCount": 67,
+  "exportedAt": "2026-10-06T09:46:51.235Z",
+  "recordCount": 84,
   "records": [
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208081",
+      "serialNumber": "121TBK0435",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Caranguejeira"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208085",
+      "serialNumber": "121TBR0169",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Caranguejeira"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208059",
+      "serialNumber": "121TBH5927",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Bidoeira de Cima"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208096",
+      "serialNumber": "121TBR0192",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Bidoeira de Cima"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208047",
+      "serialNumber": "121TBK0090",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Bidoeira de Cima"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208088",
+      "serialNumber": "121TBH5852",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Bidoeira de Cima"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208078",
+      "serialNumber": "121TBK0453",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Bidoeira de Cima"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208080",
+      "serialNumber": "121TBK0761",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Bajouca"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208044",
+      "serialNumber": "121TBR0152",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Bajouca"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208108",
+      "serialNumber": "121TBH5730",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Bajouca"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208101",
+      "serialNumber": "121TBK0752",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Bajouca"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208042",
+      "serialNumber": "121TBR0188",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Bajouca"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208048",
+      "serialNumber": "121TBM0185",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Arrabal"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208046",
+      "serialNumber": "121TBR0199",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Arrabal"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208069",
+      "serialNumber": "121TBK0740",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Arrabal"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208095",
+      "serialNumber": "121TBR0194",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Arrabal"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208084",
+      "serialNumber": "121TBH5850",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Arrabal"
+    },
     {
       "portableNumber": "",
       "type": "Portátil",
@@ -733,8 +937,8 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Operacional",
-      "location": "ABSC02"
+      "status": "Manutenção",
+      "location": "Gab. Central"
     },
     {
       "portableNumber": "0032",
@@ -745,7 +949,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Reserva",
+      "status": "Manutenção",
       "location": "Gab. Central"
     },
     {
@@ -757,7 +961,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Reserva",
+      "status": "Manutenção",
       "location": "Gab. Central"
     },
     {
@@ -769,7 +973,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Reserva",
+      "status": "Manutenção",
       "location": "Gab. Central"
     },
     {
@@ -781,7 +985,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Reserva",
+      "status": "Manutenção",
       "location": "Gab. Central"
     },
     {
@@ -793,7 +997,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Reserva",
+      "status": "Manutenção",
       "location": "Gab. Central"
     },
     {
@@ -805,7 +1009,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Reserva",
+      "status": "Manutenção",
       "location": "Gab. Central"
     }
   ]
