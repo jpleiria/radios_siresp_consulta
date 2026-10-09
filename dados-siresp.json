@@ -1,9 +1,129 @@
 {
   "application": "CBSLeiria Consulta SIRESP",
   "schemaVersion": 1,
-  "exportedAt": "2026-10-06T09:46:51.235Z",
-  "recordCount": 84,
+  "exportedAt": "2026-10-09T17:54:45.894Z",
+  "recordCount": 94,
   "records": [
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208045",
+      "serialNumber": "121TBH5900",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Coimbrão"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208087",
+      "serialNumber": "121TBM3498",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Coimbrão"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208008",
+      "serialNumber": "121TBM3354",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Carreira"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208015",
+      "serialNumber": "121TBR0161",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Carreira"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208016",
+      "serialNumber": "121TBH5894",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Carreira"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208023",
+      "serialNumber": "121TBH5835",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Carreira"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208010",
+      "serialNumber": "121TBK0658",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Carreira"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208097",
+      "serialNumber": "121TBK0956",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Caranguejeira"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208066",
+      "serialNumber": "121TBR0158",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Caranguejeira"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208056",
+      "serialNumber": "121TBM2786",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Caranguejeira"
+    },
     {
       "portableNumber": "",
       "type": "Portátil",
@@ -356,7 +476,7 @@
       "portableNumber": "",
       "type": "Móvel",
       "issi": "6124395",
-      "serialNumber": "**",
+      "serialNumber": "938TQW4848",
       "brand": "MOTOROLA",
       "model": "MTM5400",
       "allocatedTo": "CBSL",
@@ -937,7 +1057,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Manutenção",
+      "status": "Operacional",
       "location": "Gab. Central"
     },
     {
@@ -949,7 +1069,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Manutenção",
+      "status": "Operacional",
       "location": "Gab. Central"
     },
     {
@@ -961,7 +1081,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Manutenção",
+      "status": "Operacional",
       "location": "Gab. Central"
     },
     {
@@ -973,7 +1093,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Manutenção",
+      "status": "Operacional",
       "location": "Gab. Central"
     },
     {
@@ -985,7 +1105,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Manutenção",
+      "status": "Operacional",
       "location": "Gab. Central"
     },
     {
@@ -997,7 +1117,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Manutenção",
+      "status": "Operacional",
       "location": "Gab. Central"
     },
     {
@@ -1009,7 +1129,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Manutenção",
+      "status": "Operacional",
       "location": "Gab. Central"
     }
   ]
