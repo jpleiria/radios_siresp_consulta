@@ -1,7 +1,7 @@
 {
   "application": "CBSLeiria Consulta SIRESP",
   "schemaVersion": 1,
-  "exportedAt": "2026-10-11T13:11:31.489Z",
+  "exportedAt": "2026-10-11T13:15:04.320Z",
   "recordCount": 108,
   "records": [
     {
@@ -985,7 +985,7 @@
       "model": "MTP3550",
       "allocatedTo": "CBSL",
       "network": "Dupla",
-      "status": "Reserva",
+      "status": "Operacional",
       "location": "Gab. Central"
     },
     {
@@ -1165,7 +1165,7 @@
       "model": "STP9038",
       "allocatedTo": "CBSL",
       "network": "ANEPC",
-      "status": "Reserva",
+      "status": "Operacional",
       "location": "Gab. Central"
     },
     {
