@@ -1,9 +1,69 @@
 {
   "application": "CBSLeiria Consulta SIRESP",
   "schemaVersion": 1,
-  "exportedAt": "2026-10-09T17:55:40.326Z",
-  "recordCount": 94,
+  "exportedAt": "2026-10-11T13:00:26.926Z",
+  "recordCount": 99,
   "records": [
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208058",
+      "serialNumber": "121TBM3272",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Colmeias e Memória"
+    },
+    {
+      "portableNumber": "",
+      "type": "Base",
+      "issi": "6201601",
+      "serialNumber": "2PND01510G7G911",
+      "brand": "SEPURA",
+      "model": "SRG3900",
+      "allocatedTo": "CMOS",
+      "network": "Municipal",
+      "status": "Operacional",
+      "location": "CMOS"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208041",
+      "serialNumber": "121TBK1056",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Coimbrão"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208098",
+      "serialNumber": "121TBK0821",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Coimbrão"
+    },
+    {
+      "portableNumber": "",
+      "type": "Portátil",
+      "issi": "6208109",
+      "serialNumber": "121TBK0839",
+      "brand": "MOTOROLA",
+      "model": "MTP3550",
+      "allocatedTo": "ULPC",
+      "network": "Dupla",
+      "status": "Operacional",
+      "location": "Coimbrão"
+    },
     {
       "portableNumber": "",
       "type": "Portátil",
